@@ -4,28 +4,10 @@ layout: default
 
 {% include heading.html heading=page.heading %}
 
-<main class="py-6">
-  <head>
-    <link rel="stylesheet" type="text/css" href="assets/css/landfills.css" />
-    <link rel='stylesheet' type="text/css" href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' />
-    <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" />
-
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
-    <script async src="assets/js/landfills.js"></script>
-</head>
-
-  <body>
-      <!-- <h1>{{ page.title }}</h1> -->
-      <h2>Map of decommissioned landfills with renewable energy potential</h2>
-      <div id="map-container">
-          <div id="map"></div>
-          <!-- <div class='map-overlay'>
-              <fieldset>
-                  <input id='feature-filter' type='text' placeholder='Filtrer les unités SHS' />
-              </fieldset>
-              <div id='feature-listing' class='listing'></div>
-          </div> -->
-      </div>
-  </body>  
-</main>
+<div id="map" class="w-full h-96 mb-6"></div>
+<!-- <div class='map-overlay'>
+    <fieldset>
+        <input id='feature-filter' type='text' placeholder='Filtrer les unités SHS' />
+    </fieldset>
+    <div id='feature-listing' class='listing'></div>
+</div> -->
